@@ -1,0 +1,53 @@
+body{ background:#EAF2FF; font-family: 'Rajdhani', sans-serif;}
+
+
+.white-wrapper{ background:#fff; min-height:287px; border-radius:20px; padding:20px; margin-bottom:30px;box-shadow: -1px 0px 20px -1px rgba(0,0,0,0.14);
+-webkit-box-shadow: -1px 0px 20px -1px rgba(0,0,0,0.14);
+-moz-box-shadow: -1px 0px 20px -1px rgba(0,0,0,0.14);}
+.custom-nav li a{     background: #fff;  border-radius: 100%;  width: 40px; height: 40px; text-align: center;}
+.custom-nav li{ margin-left: 10px; }
+.box-heading{ border-bottom: 2px solid #EBF2F7; padding-bottom:10px; font-size: 18px; font-weight: bold}
+.box-heading2{ border-bottom: 2px solid #EBF2F7; padding-bottom:10px; font-size: 18px; font-weight: bold; color: #82C8FB}
+.left-side-pannel li{ list-style: none; padding: 10px 8px; margin-bottom: 10px; }
+.left-side-pannel{ padding: 0; margin: 0; }
+.left-side-pannel li a{ color: #000; font-size: 13px; display: block }
+.left-side-pannel li a span{background: #52575D; width: 20px; height: 20px; border-radius: 100%; float: right; text-align: center; line-height: 22px; color: #fff; font-size: 12px}
+.left-side-pannel li a i{color:#D0DBE5; margin-right: 10px;  font-size: 18px; float: left; width: 20px;}
+.left-side-pannel li:last-child{ margin-top: 127px; border-top: 2px solid #EBF2F7; padding: 10px 8px; margin-bottom: 0;padding-top: 26px; }
+.left-side-pannel li:last-child:hover{ background: none;padding-top: 26px; }
+.to-do-list{max-height: 120px;  position: relative;  overflow: hidden;}
+  .left-side-pannel li a:hover{ text-decoration: none; }
+.left-side-pannel li:hover{ text-decoration: none; background: #EAF2FF; padding: 10px 8px; border-radius: 10px; }
+
+.left-side-pannel li.active{background:#EAF2FF; border-radius: 10px; }
+.left-side-pannel li.active a ,.left-side-pannel li.active a i{color: #508FF4}
+.left-side-pannel li:hover i{color: #508FF4}
+
+.left-side-pannel li.active 
+
+
+
+
+  .to-do-list .read-more {   position: absolute;   bottom: 0;   left: 0;  width: 100%;   text-align: center;   margin: 0; padding: 30px 0; 	
+  /* "transparent" only works here because == rgba(0,0,0,0) */
+  background-image: linear-gradient(to bottom, transparent, white);
+}
+.profile-image{ width: 30px; height: 30px; border-radius: 100%; margin-right: 10px; }
+.box-heading-profile-name{border-bottom: 2px solid #EBF2F7; padding-bottom:10px; font-size: 14px; font-weight: bold;}
+/* ............................login section................................... */
+.login-section input.input-fild{ display: block; width: 100%; margin-top: 10px;border: 1px solid #508FF4; border-radius: 10px !important; text-align: center}
+.login-section h2{ margin: 30px 0; color: #508FF4; font-family: 'Lato', sans-serif; font-weight: 300 }
+
+ .login-section{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100%}
+ .login-btn{ margin-top: 10px; background: #508FF4 ; border: none; padding: 5px 20px; border-radius: 5px; color: #fff  }
+.login-section input.input-fild::-webkit-input-placeholder { /* Edge */
+  color: #508FF4;
+}
+
+.login-section input.input-fild:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #508FF4;
+}
+
+.login-section input.input-fild::placeholder {
+  color: #508FF4;
+}

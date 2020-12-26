@@ -1,0 +1,17 @@
+<div class="container">
+
+
+{{isLoggedIn}}
+  <app-header *ngIf="isLoggedIn"></app-header>
+
+  <div [ngClass]="isLoggedIn?'row':'row login-section'" >
+    <div class="col-lg-3" *ngIf="isLoggedIn">
+      <app-sidemenu ></app-sidemenu>
+    </div>
+    <div  [ngClass]="isLoggedIn?'col-lg-9':'col-lg-12'">
+
+                 <router-outlet></router-outlet>
+      
+    </div>
+  </div>
+</div>
