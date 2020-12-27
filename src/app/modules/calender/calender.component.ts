@@ -4,25 +4,18 @@ import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-calender',
-//   templateUrl: './sidemenu.component.html',
-//   styleUrls: ['./sidemenu.component.css']
+  templateUrl: './calender.component.html',
+  styleUrls: ['./calender.component.css']
 })
 export class CalenderComponent implements OnInit {
 
-  public currentUrl:string="";
+  public currentUrl: string = "";
 
-  constructor(public router : Router) { }
+  constructor() { }
 
   ngOnInit(): void {
-      
-        this.getUrl();
-  
-
   }
 
-  getUrl():void{
-    console.log("Router",this.router.url);
-    this.currentUrl = this.router.url;
-  }
+
 
 }

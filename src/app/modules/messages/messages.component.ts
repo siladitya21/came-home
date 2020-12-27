@@ -4,8 +4,8 @@ import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-messages',
-//   templateUrl: './sidemenu.component.html',
-//   styleUrls: ['./sidemenu.component.css']
+  templateUrl: './messages.component.html',
+  styleUrls: ['./messages.component.css']
 })
 export class MessagesComponent implements OnInit {
 
