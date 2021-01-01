@@ -24,10 +24,6 @@ body{ background:#EAF2FF; font-family: 'Rajdhani', sans-serif;}
 .left-side-pannel li:hover i{color: #508FF4}
 
 .left-side-pannel li.active 
-
-
-
-
   .to-do-list .read-more {   position: absolute;   bottom: 0;   left: 0;  width: 100%;   text-align: center;   margin: 0; padding: 30px 0; 	
   /* "transparent" only works here because == rgba(0,0,0,0) */
   background-image: linear-gradient(to bottom, transparent, white);
@@ -51,3 +47,262 @@ body{ background:#EAF2FF; font-family: 'Rajdhani', sans-serif;}
 .login-section input.input-fild::placeholder {
   color: #508FF4;
 }
+
+/* ............................New Patient................................... */
+.box-heading3{    border-bottom: 2px solid #EBF2F7;
+    /* padding-bottom: 10px; */
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    position: absolute;
+    top: -75px;
+    background: #fff;
+    display: block;
+    width: 100%;
+    left: -4px;
+    padding: 25px 0;
+    text-align: center;
+    z-index: -1;
+    padding-top: 19px;
+    border-radius: 20px 20px 0px 0; font-weight: bold;}
+
+    .big-profile-image{ width: 100%; text-align: center; margin-bottom: 20px; position: relative; }
+    .big-profile-image label{position: absolute; bottom: -9px; right: 33px; cursor: pointer}
+     .big-profile-image img{ border-radius: 100%; width: 80%}
+     .custom-fild{ width: 100%; border: 1px solid #BCE0FD; border-radius: 0; margin-bottom: 10px; }
+     .custom-line{ border: 2px solid #EBF2F7  }
+
+
+     .custom-fild::-webkit-input-placeholder { /* Edge */
+  color: #000; font-size: 12px; opacity: 1; font-weight: bold
+}
+
+.custom-fild:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #000; font-size: 12px; opacity: 1; font-weight: bold
+}
+
+.custom-fild::placeholder {
+  color: #000; font-size: 12px; opacity: 1; font-weight: bold
+}
+.custon-select{color: #000; font-size: 12px; opacity: 1; font-weight: bold}
+.hidden{ visibility: hidden }
+
+
+.custom-fild2{ width: 100%; border: 1px solid #BCE0FD; border-radius: 0; margin-bottom: 10px; }
+textarea.custom-fild2{ height: 250px; resize: none }
+
+
+.custom-fild2::-webkit-input-placeholder { /* Edge */
+  color: #2699FB; font-size: 12px; opacity: 1; font-weight: bold
+}
+
+.custom-fild2:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #2699FB; font-size: 12px; opacity: 1; font-weight: bold
+}
+
+.custom-fild2::placeholder {
+  color: #2699FB; font-size: 12px; opacity: 1; font-weight: bold
+}
+.btn2{ display: block; color: #fff; text-transform: uppercase; font-size: 12px; width: 100%; background: #508FF4; border: none; border-radius: 5px; font-weight: bold; cursor: pointer;
+ }
+
+ .box-heading span{ font-size: 10px; color: #2699FB; margin-left: 10px; }
+ .instraction{ font-size: 10px; color: #2699FB; text-align: right; font-weight: bold }
+
+ /* --------------------------------------------checkbox-------------------------------- */
+ .checkbox {
+  --background: #fff;
+  --border: #2699FB;
+  --border-hover: #BBC1E1;
+  --border-active: #1E2235;
+  --tick: #fff;
+  position: relative;
+  border-radius: 0;
+   width: auto;
+   text-align: center;
+}
+.checkbox input,
+.checkbox svg {
+  width: 25px;
+  height: 25px;
+  display: block;
+  margin: 0 auto;
+}
+.checkbox input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: relative;
+  outline: none;
+  background: var(--background);
+  border: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  border-radius: 4px;
+  -webkit-transition: box-shadow .3s;
+  transition: box-shadow .3s;
+  box-shadow: inset 0 0 0 var(--s, 1px) var(--b, var(--border));
+}
+.checkbox input:hover {
+  --s: 2px;
+  --b: var(--border-hover);
+}
+.checkbox input:checked {
+  --b: var(--border-active);
+}
+.checkbox svg {
+  pointer-events: none;
+  fill: none;
+  stroke-width: 2px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: var(--stroke, var(--border-active));
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  -webkit-transform: scale(var(--scale, 1)) translateZ(0);
+          transform: scale(var(--scale, 1)) translateZ(0);
+}
+.checkbox.path input:checked {
+  --s: 2px;
+  -webkit-transition-delay: .4s;
+          transition-delay: .4s;
+}
+.checkbox.path input:checked + svg {
+  --a: 16.1 86.12;
+  --o: 102.22;
+}
+.checkbox.path svg {
+  stroke-dasharray: var(--a, 86.12);
+  stroke-dashoffset: var(--o, 86.12);
+  -webkit-transition: stroke-dasharray .6s, stroke-dashoffset .6s;
+  transition: stroke-dasharray .6s, stroke-dashoffset .6s;
+}
+.checkbox.bounce {
+  --stroke: var(--tick);
+}
+.checkbox.bounce input:checked {
+  --s: 11px;
+}
+.checkbox.bounce input:checked + svg {
+  -webkit-animation: bounce .4s linear forwards .2s;
+          animation: bounce .4s linear forwards .2s;
+}
+.checkbox.bounce svg {
+  --scale: 0;
+}
+
+@-webkit-keyframes bounce {
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  75% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes bounce {
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  75% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+ /* --------------------------------------------checkbox-------------------------------- */
+
+ .check-heading{ font-size: 12px; color: #2699FB }
+
+ .lvl-type{font-size: 12px; color: #2699FB;
+    
+    font-weight: bold;}
+    .line-ht-adj{ line-height: 14px; }
+
+
+/* --------------------------------------------New Message-------------------------------- */
+
+
+.blue-box{ border: 1px solid #BCE0FD; border-radius: 10px; display: block; padding:0 10px 0 10px ;  margin-bottom: 10px;}
+.invisible-fild{width: 35vh;height: 4vh;}
+.blue-box label{font-size: 12px; font-weight: bold; color:#6B8FF4 }
+.invisible-fild:focus{ border: none; outline: none }
+.blue-border{border: 1px solid #BCE0FD; min-height: 300px;}
+.big-t-area{ width: 100%;height: 370px; background: #F3F7FF; border: none; border-radius: 10px; margin: 10px 0 5px 0; resize: none; padding: 10px; }
+.big-t-area:focus{border: none; outline: none}
+.lb-txt{ font-size: 12px; color: #000; margin-left: 10px; font-weight: bold; }
+.btn-section{ margin-top: 222px; }
+.other-submit{    color: #6B8FF4; text-transform: uppercase; font-size: 12px; width: 100%; background: #EAF2FF; border: none; border-radius: 5px; font-weight: bold;
+    cursor: pointer; margin-top: 10px; padding:8px;}
+
+
+    .other-chbox .checkbox {
+  --background: #BCE0FD;
+  --border: #EAF2FF;
+  --border-hover: #BBC1E1;
+  --border-active: #fff;
+  --tick: #fff;
+  position: relative;
+  border-radius: 0;
+   width: auto;
+   text-align: center;
+}
+
+
+
+
+.large-heading{ font-size:32px ; font-weight: bold; margin-top: 20px; }
+.bio p{ margin-bottom: 0; font-size: 13px;color: #333 }
+.icon-right a{ height: 40px; width: 40px; background: #EAF2FF; border-radius: 100%;text-align: center; display:inline-block; position: relative; top: -15px; }
+.icon-right a i{line-height: 41px; color:#508FF4;}
+
+
+.has-search .form-control {
+    padding-left: 2.375rem;
+    background: #F1F4F7;
+    border: none;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+
+}
+div.box-heading-profile-name{border-bottom: none; padding-bottom:10px; font-size: 14px; font-weight: bold; margin-left: 15px;position: relative;
+    top: -8px; font-weight: normal;}
+
+
+   div.box-heading-profile-name .profile-image{ width: 40px; height: 40px; }
+   .plane-ling a{ display: inline; background: #EAF2FF; padding: 4px 20px; float: left;  border-radius: 8px; font-size: 12px; font-weight: bold; margin-top: 5px;}
+   .plane-ling a:hover{ text-decoration: none; }
+   .trd-ck-box .checkbox{    --background: #fff;
+    --border: #E3E9EF;
+    --border-hover: #BBC1E1;
+    --border-active: #1E2235;
+    --tick: #fff;
+    position: relative;
+    border-radius: 0;
+    width: auto;
+    text-align: center;}
+
+   

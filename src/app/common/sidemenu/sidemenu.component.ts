@@ -20,8 +20,7 @@ export class SidemenuComponent implements OnInit {
 
   }
 
-  getUrl():void{
-    
+  getUrl():void{    
     setTimeout(() => {
       console.log("Router",this.router.url);
       this.currentUrl = this.router.url;

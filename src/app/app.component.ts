@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { LoadingBarService } from '@ngx-loading-bar/core';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +9,10 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'care-home';
   public isLoggedIn:boolean =false;
+          
+      constructor(private loadingBar: LoadingBarService){
 
+      }
 
    ngOnInit(){
     
@@ -17,8 +21,16 @@ export class AppComponent {
         console.log(sessionStorage.getItem("isLoggedIn"));
         if(sessionStorage.getItem("isLoggedIn")!=null)
         this.isLoggedIn = true;
-       }, 3000);
+       }, 500);
      
    }
+
+   startLoading() {
+    this.loadingBar.start();
+  }
+
+  stopLoading() {
+    this.loadingBar.complete();
+  }
 
 }

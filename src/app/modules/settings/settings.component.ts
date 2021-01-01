@@ -9,20 +9,13 @@ import { Router } from '@angular/router';
 })
 export class SettingsComponent implements OnInit {
 
-  public currentUrl:string="";
 
-  constructor(public router : Router) { }
+
+  constructor() { }
 
   ngOnInit(): void {
-      
-        this.getUrl();
-  
-
   }
 
-  getUrl():void{
-    console.log("Router",this.router.url);
-    this.currentUrl = this.router.url;
-  }
+
 
 }

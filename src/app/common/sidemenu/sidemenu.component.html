@@ -5,25 +5,19 @@
     <h3 class="box-heading-profile-name"><img src="assets/img/no-user-image-icon.jpg" class="profile-image">
         Michael Scott</h3>
     <ul class="left-side-pannel">
-        <li (click)="getUrl()" [class.active]="(currentUrl==='/dashboard')"><a routerLink="/dashboard"><i
-                    class="fa fa-th-large" aria-hidden="true"></i> Dashboard</a></li>
-        <li (click)="getUrl()" [class.active]="(currentUrl==='/nurse-manager')"><a routerLink="/nurse-manager"><i
-                    class="fa fa-users" aria-hidden="true"></i> Nurse manager</a></li>
-        <li (click)="getUrl()" [class.active]="(currentUrl==='/patients')"><a routerLink="/patients"><i
-                    class="fa fa-file" aria-hidden="true"></i> Patients</a></li>
-        <li (click)="getUrl()" [class.active]="(currentUrl==='/traffic-analyzer')"><a routerLink="/traffic-analyzer"><i
-                    class="fa fa-map" aria-hidden="true"></i>Traffic analyzer</a></li>
-        <li (click)="getUrl()" [class.active]="(currentUrl==='/calender')"><a routerLink="/calender"><i
-                    class="fa fa-calendar" aria-hidden="true"></i> Calendar</a>
+        <li><a routerLink="/dashboard" routerLinkActive="active"><i class="fa fa-th-large" aria-hidden="true"></i>
+                Dashboard</a></li>
+        <li><a routerLink="/nurse-manager" routerLinkActive="active"><i class="fa fa-users" aria-hidden="true"></i>
+                Nurse manager</a></li>
+        <li><a routerLink="/patients" routerLinkActive="active"><i class="fa fa-file" aria-hidden="true"></i> Patients</a></li>
+        <li><a routerLink="/traffic-analyzer" routerLinkActive="active"><i class="fa fa-map" aria-hidden="true"></i>Traffic analyzer</a></li>
+        <li><a routerLink="/calender" routerLinkActive="active"><i class="fa fa-calendar" aria-hidden="true"></i> Calendar</a>
         </li>
-        <li (click)="getUrl()" [class.active]="(currentUrl==='/messages')"><a routerLink="/messages"><i
-                    class="fa fa-comments" aria-hidden="true"></i> Messages</a>
+        <li><a routerLink="/messages" routerLinkActive="active"><i class="fa fa-comments" aria-hidden="true"></i> Messages</a>
         </li>
-        <li (click)="getUrl()" [class.active]="(currentUrl==='/settings')"><a routerLink="/settings"><i class="fa fa-cog"
-                    aria-hidden="true"></i>
+        <li><a routerLink="/settings" routerLinkActive="active"><i class="fa fa-cog" aria-hidden="true"></i>
                 Settings<span>8</span></a></li>
-        <li [class.active]="(currentUrl==='logout')"><a routerLink="/logout"><i class="fa fa-power-off"
-                    aria-hidden="true"></i> Logout</a>
+        <li><a routerLink="/logout" routerLinkActive="active"><i class="fa fa-power-off" aria-hidden="true"></i> Logout</a>
         </li>
     </ul>
 </div>

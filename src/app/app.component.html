@@ -1,17 +1,18 @@
+<!-- loader  -->
+<ngx-loading-bar></ngx-loading-bar>
+
+ <!-- body section  -->
 <div class="container">
-
-
-{{isLoggedIn}}
+  {{isLoggedIn}}
   <app-header *ngIf="isLoggedIn"></app-header>
-
-  <div [ngClass]="isLoggedIn?'row':'row login-section'" >
-    <div class="col-lg-3" *ngIf="isLoggedIn">
-      <app-sidemenu ></app-sidemenu>
+  <div [ngClass]="isLoggedIn?'row':'row login-section'">
+   <div class="col-lg-3" *ngIf="isLoggedIn">     <!-- left menu or sidebar  -->
+      <app-sidemenu></app-sidemenu>
     </div>
-    <div  [ngClass]="isLoggedIn?'col-lg-9':'col-lg-12'">
-
-                 <router-outlet></router-outlet>
-      
+    <div [ngClass]="isLoggedIn?'col-lg-9':'col-lg-12'">      <!-- display section  -->
+      <router-outlet></router-outlet>
     </div>
   </div>
 </div>
+<!-- <button (click)="startLoading()">start</button>
+<button (click)="stopLoading()">stop</button> -->

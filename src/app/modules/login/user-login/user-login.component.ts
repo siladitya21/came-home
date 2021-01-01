@@ -18,13 +18,13 @@ export class UserLoginComponent implements OnInit {
     sessionStorage.setItem("isLoggedIn", "true");
     
     setTimeout(() => {
-      this.router.navigateByUrl('/');
-     
-    }, 7000);
-    setTimeout(() => {
-      this.router.navigateByUrl('/login'); 
+      // this.router.navigateByUrl('/');
       this.router.navigateByUrl('/dashboard'); 
-    }, 10000);
+    }, 7000);
+    // setTimeout(() => {
+    //   this.router.navigateByUrl('/login'); 
+    //   this.router.navigateByUrl('/dashboard'); 
+    // }, 10000);
     
 
   }

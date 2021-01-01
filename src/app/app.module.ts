@@ -6,11 +6,15 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SidemenuComponent } from './common/sidemenu/sidemenu.component';
 import { HeaderComponent } from './common/header/header.component';
+import { LoadingBarModule } from '@ngx-loading-bar/core';
+import { LoadingBarRouterModule } from '@ngx-loading-bar/router';
+// import { LoadingBarHttpModule } from '@ngx-loading-bar/http';
+import { LoadingBarHttpClientModule } from '@ngx-loading-bar/http-client';
+import { DemoMaterialModule } from './shared/material-module';
+import { RouterModule } from '@angular/router';
 
 
 
-
-// import { DashboardModule } from "./dashboard/dashboard.module";
 
 
 
@@ -24,7 +28,13 @@ import { HeaderComponent } from './common/header/header.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    LoadingBarModule,
+    LoadingBarRouterModule,
+    LoadingBarHttpClientModule,
+    // LoadingBarHttpModule,
+    DemoMaterialModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
